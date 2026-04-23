@@ -1,6 +1,7 @@
 package com.cloudcart.auth.entity;
 
 public enum Role {
-    CUSTOMER,
+    DRIVER,
+    MANAGER,
     ADMIN
 }
