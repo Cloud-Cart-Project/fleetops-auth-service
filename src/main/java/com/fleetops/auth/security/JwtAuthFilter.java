@@ -1,6 +1,6 @@
-package com.cloudcart.auth.security;
+﻿package com.fleetops.auth.security;
 
-import com.cloudcart.auth.repository.UserRepository;
+import com.fleetops.auth.repository.UserRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -51,9 +51,10 @@ public class JwtAuthFilter extends OncePerRequestFilter {
                 }
             }
         } catch (Exception e) {
-            // Invalid token — just continue unauthenticated
+            // Invalid token â€” just continue unauthenticated
         }
 
         filterChain.doFilter(request, response);
     }
 }
+

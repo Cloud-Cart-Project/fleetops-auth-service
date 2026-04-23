@@ -1,21 +1,21 @@
-# 🔐 CloudCart Auth Service
+﻿# ðŸ” FleetOps Auth Service
 
-The Authentication and Authorization service for the CloudCart E-commerce platform. It handles user registration, login, and JWT token issuance.
+The Authentication and Authorization service for the FleetOps E-commerce platform. It handles user registration, login, and JWT token issuance.
 
-## 🛠️ Tech Stack
+## ðŸ› ï¸ Tech Stack
 *   **Framework:** Spring Boot 3.4
 *   **Security:** Spring Security 6
 *   **Database:** PostgreSQL (uses `auth_db`)
 *   **Authentication:** Stateless JWT (HS512)
 *   **Password Hashing:** BCrypt
 
-## 🎯 Responsibilities
+## ðŸŽ¯ Responsibilities
 *   **User Registration:** Creates new users with the `CUSTOMER` role by default.
 *   **User Login:** Validates credentials and generates a JWT valid for 24 hours.
 *   **Role Management:** Supports `CUSTOMER` and `ADMIN` roles. The JWT payload includes the user's role, allowing other services to perform stateless authorization.
 *   **Profile Retrieval:** Returns the authenticated user's username.
 
-## 📡 API Endpoints
+## ðŸ“¡ API Endpoints
 
 | Method | Endpoint | Auth Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -23,7 +23,7 @@ The Authentication and Authorization service for the CloudCart E-commerce platfo
 | `POST` | `/auth/login` | No | Authenticate and receive a JWT |
 | `GET` | `/auth/me` | Yes (JWT) | Get the current authenticated user's username |
 
-## 🚀 Running Locally
+## ðŸš€ Running Locally
 
 ### Prerequisites
 *   Java 17+
@@ -38,8 +38,9 @@ export JWT_SECRET=your-super-secret-key-minimum-32-chars
 mvn spring-boot:run
 ```
 
-## 🐳 Docker
+## ðŸ³ Docker
 
 ```bash
-docker build -t cloudcart-auth-service:v1.0.0 .
+docker build -t fleetops-auth-service:v1.0.0 .
 ```
+

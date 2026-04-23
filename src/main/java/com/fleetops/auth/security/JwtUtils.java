@@ -1,4 +1,4 @@
-package com.cloudcart.auth.security;
+﻿package com.fleetops.auth.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -74,3 +74,4 @@ public class JwtUtils {
         return extractExpiration(token).before(new Date());
     }
 }
+

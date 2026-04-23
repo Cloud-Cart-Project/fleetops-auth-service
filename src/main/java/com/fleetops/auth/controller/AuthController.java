@@ -1,12 +1,12 @@
-package com.cloudcart.auth.controller;
+﻿package com.fleetops.auth.controller;
 
-import com.cloudcart.auth.dto.AuthResponse;
-import com.cloudcart.auth.dto.LoginRequest;
-import com.cloudcart.auth.dto.RegisterRequest;
-import com.cloudcart.auth.entity.Role;
-import com.cloudcart.auth.entity.User;
-import com.cloudcart.auth.repository.UserRepository;
-import com.cloudcart.auth.security.JwtUtils;
+import com.fleetops.auth.dto.AuthResponse;
+import com.fleetops.auth.dto.LoginRequest;
+import com.fleetops.auth.dto.RegisterRequest;
+import com.fleetops.auth.entity.Role;
+import com.fleetops.auth.entity.User;
+import com.fleetops.auth.repository.UserRepository;
+import com.fleetops.auth.security.JwtUtils;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -73,3 +73,4 @@ public class AuthController {
         return ResponseEntity.ok(authentication.getName());
     }
 }
+

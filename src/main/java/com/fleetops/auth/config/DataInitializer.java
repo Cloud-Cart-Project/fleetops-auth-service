@@ -1,8 +1,8 @@
-package com.cloudcart.auth.config;
+﻿package com.fleetops.auth.config;
 
-import com.cloudcart.auth.entity.Role;
-import com.cloudcart.auth.entity.User;
-import com.cloudcart.auth.repository.UserRepository;
+import com.fleetops.auth.entity.Role;
+import com.fleetops.auth.entity.User;
+import com.fleetops.auth.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -14,7 +14,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  * FleetOps Data Initializer
  *
  * Seeds the default system users on first startup if they do not already exist.
- * This is idempotent — safe to run on every startup.
+ * This is idempotent â€” safe to run on every startup.
  *
  * Default credentials (change via env vars in production):
  *   admin1  / Admin@123   (ADMIN)
@@ -55,3 +55,4 @@ public class DataInitializer {
         }
     }
 }
+

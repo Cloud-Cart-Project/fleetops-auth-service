@@ -1,4 +1,4 @@
-package com.cloudcart.auth.exception;
+﻿package com.fleetops.auth.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -29,3 +29,4 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(body, HttpStatus.UNAUTHORIZED);
     }
 }
+

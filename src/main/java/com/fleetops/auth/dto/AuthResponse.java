@@ -1,4 +1,4 @@
-package com.cloudcart.auth.dto;
+﻿package com.fleetops.auth.dto;
 
 public class AuthResponse {
     private String token;
@@ -15,3 +15,4 @@ public class AuthResponse {
     public String getUsername() { return username; }
     public String getRole() { return role; }
 }
+

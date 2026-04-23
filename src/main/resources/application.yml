@@ -1,4 +1,4 @@
-spring:
+﻿spring:
   application:
     name: auth-service
   datasource:
@@ -35,4 +35,5 @@ management:
 
 logging:
   level:
-    com.cloudcart: INFO
+    com.fleetops: INFO
+

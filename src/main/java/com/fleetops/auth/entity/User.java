@@ -1,4 +1,4 @@
-package com.cloudcart.auth.entity;
+﻿package com.fleetops.auth.entity;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
@@ -52,3 +52,4 @@ public class User {
     public LocalDateTime getCreatedAt() { return createdAt; }
     public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
 }
+

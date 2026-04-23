@@ -1,6 +1,6 @@
-package com.cloudcart.auth.security;
+﻿package com.fleetops.auth.security;
 
-import com.cloudcart.auth.repository.UserRepository;
+import com.fleetops.auth.repository.UserRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -25,7 +25,7 @@ public class AuthConfig {
     @Bean
     public UserDetailsService userDetailsService() {
         return username -> {
-            com.cloudcart.auth.entity.User user = userRepository.findByUsername(username)
+            com.fleetops.auth.entity.User user = userRepository.findByUsername(username)
                     .orElseThrow(() -> new UsernameNotFoundException("User not found"));
             return User.builder()
                     .username(user.getUsername())
@@ -53,3 +53,4 @@ public class AuthConfig {
         return new BCryptPasswordEncoder();
     }
 }
+
